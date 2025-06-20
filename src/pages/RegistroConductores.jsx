@@ -1,6 +1,8 @@
 import { InputText } from "primereact/inputtext";
 import { FloatLabel } from "primereact/floatlabel";
 import { useState } from "react";
+import { Button } from 'primereact/button';
+        
 function RegistroConductores() {
     const [nombres, setValue] = useState('');
     return (
@@ -11,8 +13,12 @@ function RegistroConductores() {
                     <div className="logo-container">
 
                     </div>
-                    <button className="title-boton">Registro como conductor</button>
-                    <div className="dot" />
+                    <Button>
+                        <label htmlFor="registro conductor">Registro conductor</label>
+                     
+                    </Button>
+                    
+
                 </div>
 
 
@@ -21,23 +27,60 @@ function RegistroConductores() {
                         <InputText id="nombres" value={nombres} onChange={(e) => setValue(e.target.value)} />
                         <label htmlFor="nombres">Nombres</label>
                     </FloatLabel>
-
-                    <input type="text" placeholder="Nombres" className="input" />
-                    <input type="text" placeholder="Apellidos" className="input" />
-                    <input type="tel" placeholder="Telefono" className="input" />
-                    <input type="email" placeholder="Correo Electronico" className="input" />
-                    <input type="text" placeholder="Documento" className="input" />
                 </form>
 
-                <div className="boton-container">
-                    <button className="continue-boton">Continuar</button>
-                </div>
-                <img src="C:\Users\Aprendiz\Downloads\WhatsApp Image 2025-06-19 at 19.38.05.jpeg" alt="Logo SIBU" className="logo" />
+                <form className="form">
+                            <FloatLabel>
+                        <InputText id="nombres" value={nombres} onChange={(e) => setValue(e.target.value)} />
+                        <label htmlFor="nombres">Apellidos</label>
+                    </FloatLabel>
+
+                </form>
+
+                         <form className="form">
+                            <FloatLabel>
+                        <InputText id="nombres" value={nombres} onChange={(e) => setValue(e.target.value)} />
+                        <label htmlFor="nombres">Telefono</label>
+                    </FloatLabel>
+
+                </form>
+
+                         <form className="form">
+                            <FloatLabel>
+                        <InputText id="nombres" value={nombres} onChange={(e) => setValue(e.target.value)} />
+                        <label htmlFor="nombres">Correo Electronico</label>
+                    </FloatLabel>
+
+                </form>
+
+                         <form className="form">
+                            <FloatLabel>
+                        <InputText id="nombres" value={nombres} onChange={(e) => setValue(e.target.value)} />
+                        <label htmlFor="nombres">Documento</label>
+                    </FloatLabel>
+
+                </form>
+
+                
+                    </div>
+                    <Button>
+                        <label htmlFor="Continuar">Continuar</label>
+                     
+                    </Button>
+                    
+                    
+
+                
+
+               
+               
 
 
             </div>
-        </div>
+    
     )
 }
 
 export default RegistroConductores;
+
+

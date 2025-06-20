@@ -1,0 +1,62 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f6f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+.inicio .title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.float-label {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.p-inputtext {
+    width: 100%;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.registro {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.registro a {
+    color: #007ad9;
+    text-decoration: none;
+}
+
+.registro a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin-top: 1rem;
+    text-align: center;
+}

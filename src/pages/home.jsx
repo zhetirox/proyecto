@@ -1,29 +1,57 @@
-import React, {useState} from 'react';
-import'../style.css/home.css';
+import React, { useState } from 'react';
+import '../style.css/home.css';
+import { InputText } from 'primereact/inputtext';
+import { FloatLabel } from 'primereact/floatlabel';
+import { Button } from 'primereact/button';
+import { Checkbox } from 'primereact/checkbox';
+import { Password } from 'primereact/password';
+import { Message } from 'primereact/message';
 
-function App() {
-   const [email,setEmail] = useState('');
-   const [password, setPassword] = useState('');
-   const [mensaje,setMensaje] = useState('');
+function Home() {
 
-   const handleLogin =() => {
-   const user = JSON.parse(localStorage.getItem('user'));
-   if (user .email=== email user.password === password) {
-    setMensaje('inicio de sesion existoso');
-   } else {
-    setMensaje('datos incorrectos');
-   }
-  
+    const [value, setValue] = useState('');
+    const [checked, setChecked] = useState('')
 
-   }
-  return (
-    <div style={styles.container}>
-      <img src="logo.png" alt="SIBU Logo" style={styles.logo} />
-      <h1 style={styles.title}>INICIAR SESIÓN...</h1>
-      <input type="email" placeholder="Correo electrónico" style={styles.input} />
-      <input type="password" placeholder="Contraseña" style={styles.input} />
-      <button style={styles.button}>INGRESAR</button>
-      <a href="#" style={styles.link}>Olvidó contraseña</a>
-    </div>
-  );
+    return (
+        <div className='home-container'>
+            <div className='home-box'>
+
+                <div className='inicio'>
+                    <h2 className='title'>INICIAR SESIÓN</h2>
+
+                    <form className='Correo eletronico'>
+                        <div>
+                            <FloatLabel>
+                                <InputText id="email" value={value} onChange={(e) => setValue(e.target.value)} />
+                                <label htmlFor="email">Correo electrónico</label>
+                            </FloatLabel>
+
+                            <Message text="required email" />
+                        </div>
+
+                        <div>
+                            <Password />
+                        </div>
+                        <Button label="Sumbit" />
+
+                        <div className="checkbox">
+                            <Checkbox onChange={e => setChecked(e.checked)} checked={checked}></Checkbox>
+                        </div>
+
+                        <p className="registro">
+                            Olvido contraseña <a href="#">Olvido contraseña</a>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+            <div className="logo">
+
+
+            </div>
+        </div>
+    )
 }
+
+
+export default Home;

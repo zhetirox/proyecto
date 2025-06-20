@@ -2,6 +2,8 @@ import { InputText } from "primereact/inputtext";
 import { FloatLabel } from "primereact/floatlabel";
 import { useState } from "react";
 import { Button } from 'primereact/button';
+import sibuLogo from '../assets/sibu.jpeg';
+
         
 function RegistroConductores() {
     const [nombres, setValue] = useState('');
@@ -51,6 +53,7 @@ function RegistroConductores() {
                         <label htmlFor="nombres">Correo Electronico</label>
                     </FloatLabel>
 
+                
                 </form>
 
                          <form className="form">
@@ -67,7 +70,14 @@ function RegistroConductores() {
                         <label htmlFor="Continuar">Continuar</label>
                      
                     </Button>
+                    <div>     
+                     <img src={sibuLogo} alt="Logo de Sibu" style={{ width: '200px', borderRadius: '10px' }} />
+                    </div>
+
                     
+
+
+
                     
 
                 

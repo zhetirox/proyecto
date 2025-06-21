@@ -20,6 +20,7 @@ function Home() {
                     <h2 className='title'>INICIAR SESIÓN</h2>
 
                     <form className='Correo eletronico'>
+
                         <div>
                             <FloatLabel>
                                 <InputText id="email" value={value} onChange={(e) => setValue(e.target.value)} />
@@ -30,7 +31,11 @@ function Home() {
                         </div>
 
                         <div>
-                            <Password />
+                            <FloatLabel>
+                                <InputText id="username" value={value} onChange={(e) => setValue(e.target.value)} />
+                                <label htmlFor="username">Contraseña</label>
+                            </FloatLabel>
+                           
                         </div>
                         <Button label="Sumbit" />
 

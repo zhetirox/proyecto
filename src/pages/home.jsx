@@ -6,7 +6,6 @@ import { Button } from 'primereact/button';
 import { Checkbox } from 'primereact/checkbox';
 import { Password } from 'primereact/password';
 import { Message } from 'primereact/message';
-import { Logo } from './img/logo.png';
 
 function Home() {
 

@@ -32,14 +32,11 @@ function Home() {
                         <div>
                             <Password />
                         </div>
-                        <Button label="Sumbit" />
+                        <Button label="Sumbit" color='red' />
 
-                        <div className="checkbox">
-                            <Checkbox onChange={e => setChecked(e.checked)} checked={checked}></Checkbox>
-                        </div>
-
+                           
                         <p className="registro">
-                            Olvido contraseña <a href="#">Olvido contraseña</a>
+                            <a href="#">Olvido contraseña</a>
                         </p>
                     </form>
                 </div>

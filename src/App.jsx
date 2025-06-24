@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import { Button } from "primereact/button";
+import Home from "./pages/home";
 
 function App() {
-  const [count, setCount] = useState(0)
+    return (
+        <PrimeReactProvider>
+            <Home />
+        </PrimeReactProvider>
 
-  return (
-    <>
-    </>
-  )
+    );
 }
 
-export default App
+export default App;

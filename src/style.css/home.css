@@ -36,11 +36,7 @@ form {
     width: 100%;
 }
 
-.checkbox {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
+
 
 .registro {
     text-align: center;
@@ -48,7 +44,7 @@ form {
 }
 
 .registro a {
-    color: #007ad9;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -57,6 +53,8 @@ form {
 }
 
 .logo {
+    width: 200px;
     margin-top: 1rem;
     text-align: center;
+    margin: 20px;
 }

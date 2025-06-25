@@ -3,11 +3,9 @@ import { FloatLabel } from "primereact/floatlabel";
 import { useState } from "react";
 import { Button } from 'primereact/button';
 import sibuLogo from '../assets/sibu.jpeg';
-import './registroconductor.css'
-
 
         
-function RegistroConductores() {
+function Registropasajeros() {
     const [nombres, setValue] = useState('');
     return (
         <div className="container">
@@ -18,7 +16,7 @@ function RegistroConductores() {
 
                     </div>
                     <Button>
-                        <label htmlFor="registro conductor">Registro conductor</label>
+                        <label htmlFor="registro conductor">Registro pasajeros</label>
                      
                     </Button>
                     
@@ -93,6 +91,6 @@ function RegistroConductores() {
     )
 }
 
-export default RegistroConductores;
+export default Registropasajeros;
 
 

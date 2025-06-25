@@ -1,0 +1,41 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #000000, #063f8f);
+    
+}
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  color: white;
+    flex-direction: column;
+
+    border-radius: 10px;
+    
+}
+
+.registro{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+   
+}
+.inicio{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+

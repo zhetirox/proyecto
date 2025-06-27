@@ -73,7 +73,7 @@ function RegistroConductores() {
                      
                     </Button>
                     <div>     
-                     <img src={sibuLogo} alt="Logo de Sibu" style={{ width: '200px', borderRadius: '10px' }} />
+                     <img src={sibuLogo} alt="Logo de Sibu" style={{ width: '150px', borderRadius: '250px' }} />
                     </div>
 
                     

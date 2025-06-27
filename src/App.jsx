@@ -8,7 +8,7 @@ import RegistroConductores from "./pages/RegistroConductores";
 function App() {
     return (
         <PrimeReactProvider>
-           <RegistroConductores/>
+           <Registropasajeros/>
         </PrimeReactProvider>
 
     );

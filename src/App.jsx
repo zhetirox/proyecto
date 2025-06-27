@@ -1,12 +1,11 @@
 import React from "react";
 import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
-import { Button } from "primereact/button";
-import Home from "./pages/home";
+import Login from "./pages/Login/Login";
 
 function App() {
     return (
         <PrimeReactProvider>
-            <Home />
+            <Login />
         </PrimeReactProvider>
 
     );

@@ -3,6 +3,8 @@ import { FloatLabel } from "primereact/floatlabel";
 import { useState } from "react";
 import { Button } from 'primereact/button';
 import sibuLogo from '../assets/sibu.jpeg';
+import './registroconductores.css'
+
 
         
 function RegistroConductores() {
@@ -71,7 +73,7 @@ function RegistroConductores() {
                      
                     </Button>
                     <div>     
-                     <img src={sibuLogo} alt="Logo de Sibu" style={{ width: '200px', borderRadius: '10px' }} />
+                     <img src={sibuLogo} alt="Logo de Sibu" style={{ width: '150px', borderRadius: '250px' }} />
                     </div>
 
                     
@@ -92,5 +94,3 @@ function RegistroConductores() {
 }
 
 export default RegistroConductores;
-
-

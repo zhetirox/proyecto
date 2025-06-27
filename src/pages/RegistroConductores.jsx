@@ -3,7 +3,7 @@ import { FloatLabel } from "primereact/floatlabel";
 import { useState } from "react";
 import { Button } from 'primereact/button';
 import sibuLogo from '../assets/sibu.jpeg';
-import './registroconductor.css'
+import './registroconductores.css'
 
 
         

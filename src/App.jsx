@@ -9,6 +9,7 @@ function App() {
   return (
     <PrimeReactProvider>
       <Mapa />
+      
       <SideMenu />
       <Home/>
     </PrimeReactProvider>

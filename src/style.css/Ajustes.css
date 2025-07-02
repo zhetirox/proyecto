@@ -6,8 +6,8 @@ body{
   align-items: center;
   background: linear-gradient(to bottom, #000, #063f8f);
 }
-
 .Ajustes{
-  height: 100;
-  width: 100px;
+  height: 100%;
+  height: 100%;
+
 }

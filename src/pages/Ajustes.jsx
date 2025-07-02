@@ -1,5 +1,5 @@
 
-import React from 'react'; 
+import React from 'react';
 import { Menu } from 'primereact/menu';
 import { Badge } from 'primereact/badge';
 import { Avatar } from 'primereact/avatar';
@@ -40,13 +40,13 @@ export default function Ajustes() {
                 {
                     label: 'Privacidad/seguridad',
                     icon: 'pi pi-plus',
-          
+
                 },
                 {
                     label: 'Tema',
                     icon: 'pi pi-search',
-                  
-      
+
+
                 }
             ]
         },
@@ -56,7 +56,7 @@ export default function Ajustes() {
                 {
                     label: 'Configuracion',
                     icon: 'pi pi-cog',
-                  
+
                 },
                 {
                     label: 'Notificaciones',
@@ -67,13 +67,13 @@ export default function Ajustes() {
                 {
                     label: 'Terminos y condiciones',
                     icon: 'pi pi-sign-out',
-                    
+
                     template: itemRenderer
                 },
-                  {
+                {
                     label: 'Cerarr sesion',
                     icon: 'pi pi-sign-out',
-                    
+
                     template: itemRenderer
                 }
 
@@ -92,7 +92,7 @@ export default function Ajustes() {
                         <Avatar image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png" className="mr-2" shape="circle" />
                         <div className="flex flex-column align">
                             <span className="font-bold">Amy Elsner</span>
-                           
+
                         </div>
                     </button>
                 );
@@ -106,4 +106,3 @@ export default function Ajustes() {
         </div>
     )
 }
-        

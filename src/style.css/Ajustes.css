@@ -6,8 +6,7 @@ body{
   align-items: center;
   background: linear-gradient(to bottom, #000, #063f8f);
 }
-.Ajustes{
-  height: 100%;
-  height: 100%;
-
+.p-menuitem-content{
+  width: 200px; 
+  padding: 10;
 }

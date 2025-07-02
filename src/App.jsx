@@ -1,14 +1,15 @@
 import React from "react";
-import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
-import { Button } from "primereact/button";
-import Home from "./pages/home";
+import { PrimeReactProvider } from 'primereact/api';
+import PasswordScreen from "./pages/PasswordScreen";
+import TerminosCondiciones from './components/TerminosCondiciones.jsx';
+
 
 function App() {
     return (
         <PrimeReactProvider>
-            <Home />
+            <PasswordScreen />
+                        <TerminosCondiciones />
         </PrimeReactProvider>
-
     );
 }
 

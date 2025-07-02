@@ -3,12 +3,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #000000, #063f8f );
 }
 
 .Login-box {
-    background-color: rgb(0, 0, 0);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -27,25 +27,34 @@ form {
     gap: 1.5rem;
 }
 
-.float-label {
+.ingresar {
     position: relative;
-    margin-bottom: 1rem;
-    color: #da1111;
+    margin-bottom: 10rem;
+    margin-bottom: 10px;
+    text-align: center;
+     margin-bottom: 20px;
 }
 
 .p-inputtext {
     width: 100%;
-}
-
-.checkbox {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    margin-bottom: 10px;
 }
 
 .registro {
     text-align: center;
     font-size: 0.9rem;
+    margin-bottom: 10px;
+    
+}
+
+.registro input{
+background-color: #5E5B5B;
+border-color: #3a3939;
+}
+
+.registro label {
+color: #ffffff;
+
 }
 
 .registro a {
@@ -53,16 +62,29 @@ form {
     text-decoration: none;
 }
 
-.registro a:hover {
-    text-decoration: underline;
-}
-
 .logo {
     margin-top: 1rem;
     text-align: center;
+    width: auto;   
+    height: auto;
 }
 
-.card{
-text-align: center;
+
+
+.logo img {
+    margin-top: 1rem;
+    width: 70px;
+}
+
+.contraseña label {
+
 
 }
+
+.ingresar button {
+ background-color: #D9D9D9;
+ color: black;
+ border-color: #D9D9D9;
+}
+
+

@@ -3,10 +3,10 @@ import '../../style.css/Login.css';
 import { InputText } from 'primereact/inputtext';
 import { FloatLabel } from 'primereact/floatlabel';
 import { Button } from 'primereact/button';
-import { Checkbox } from 'primereact/checkbox';
 import { Password } from 'primereact/password';
-import { Message } from 'primereact/message';
-import { Image } from './assets/Logo.png';
+import LogoSibu from '../../assets/Logo_sibu.png';
+
+
 
 function Login() {
 
@@ -16,13 +16,16 @@ function Login() {
     return (
         <div className='Login-container'>
             <div className='Login-box'>
+                <div className='logo'>
+                    <img src={LogoSibu} alt="logo de sibu" />
+                </div>
 
                 <div className='inicio'>
                     <h1 className='title'>INICIAR SESIÓN</h1>
 
                     <form className='Correo eletronico'>
 
-                        <div>
+                        <div className='registro'>
                             <FloatLabel>
                                 <InputText id="email" value={value} onChange={(e) => setValue(e.target.value)} />
                                 <label htmlFor="email">Correo electrónico</label>
@@ -30,21 +33,22 @@ function Login() {
 
                         </div>
                     </form>
-                    <div>
-                        <Password>
-                        </Password>
+                    <div className='contraseña'>
+                        <Password value={value} onChange={(e) => setValue(e.target.value)} feedback={false} tabIndex={1} />
+                             <label htmlFor="Contraseña"></label>
                     </div>
                 </div>
-                <Button label="Ingresar" />
+
+                <div className='ingresar'>
+                    <Button label="INGRESAR" />
+                </div>
 
 
                 <p className="registro">
                     <h3><a href="#">Olvido contraseña</a></h3>
                 </p>
 
-                <div>
-                    <Image src="\Users\Aprendiz\Desktop\Logo_sibu.png" alt="logo de sibu"></Image>
-                </div>
+                
             </div>
 
         </div >

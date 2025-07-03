@@ -3,7 +3,8 @@ import { Password } from 'primereact/password';
 import '../style.css/PasswordScreen.css';
 
 function PasswordScreen() {
-  const [value, setValue] = useState('');
+  const [confirmar, setConfirmar] = useState('');
+    const [contraseña, setContraseña] = useState('');
 
   return (
     <div className="password-screen">
@@ -12,7 +13,8 @@ function PasswordScreen() {
 
       <div className="password-container">
                 <div className="card flex justify-content-center">
-            <Password value={value} onChange={(e) => setValue(e.target.value)} toggleMask placeholder="Ingrese su contraseña"  />
+            <Password value={confirmar} onChange={(e) => setConfirmar(e.target.value)} toggleMask placeholder="Ingrese su contraseña"  />
+            <Password value={contraseña} onChange={(e) => setContraseña(e.target.value)} toggleMask placeholder="Confirme su contraseña"  />
         </div>
       </div>
 

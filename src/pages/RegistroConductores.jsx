@@ -3,10 +3,9 @@ import { FloatLabel } from "primereact/floatlabel";
 import { useState } from "react";
 import { Button } from 'primereact/button';
 import sibuLogo from '../assets/sibu.jpeg';
-import './registroconductores.css'
+import '../style.css/registroconductores.css';
 
 
-        
 function RegistroConductores() {
     const [nombres, setValue] = useState('');
     return (
@@ -17,11 +16,12 @@ function RegistroConductores() {
                     <div className="logo-container">
 
                     </div>
-                    <Button>
-                        <label htmlFor="registro conductor">Registro conductor</label>
-                     
-                    </Button>
-                    
+                   <h1 className="h1">
+                        <label htmlFor="registro conductor">Registro conductores</label>
+                        </h1>
+
+                   
+
 
                 </div>
 
@@ -34,63 +34,67 @@ function RegistroConductores() {
                 </form>
 
                 <form className="form">
-                            <FloatLabel>
+                    <FloatLabel>
                         <InputText id="nombres" value={nombres} onChange={(e) => setValue(e.target.value)} />
                         <label htmlFor="nombres">Apellidos</label>
                     </FloatLabel>
 
                 </form>
 
-                         <form className="form">
-                            <FloatLabel>
+                <form className="form">
+                    <FloatLabel>
                         <InputText id="nombres" value={nombres} onChange={(e) => setValue(e.target.value)} />
                         <label htmlFor="nombres">Telefono</label>
                     </FloatLabel>
 
                 </form>
 
-                         <form className="form">
-                            <FloatLabel>
+                <form className="form">
+                    <FloatLabel>
                         <InputText id="nombres" value={nombres} onChange={(e) => setValue(e.target.value)} />
                         <label htmlFor="nombres">Correo Electronico</label>
                     </FloatLabel>
 
-                
+
                 </form>
 
-                         <form className="form">
-                            <FloatLabel>
+                <form className="form">
+                    <FloatLabel>
                         <InputText id="nombres" value={nombres} onChange={(e) => setValue(e.target.value)} />
                         <label htmlFor="nombres">Documento</label>
                     </FloatLabel>
 
                 </form>
 
-                
-                    </div>
-                    <Button>
-                        <label htmlFor="Continuar">Continuar</label>
-                     
-                    </Button>
-                    <div>     
-                     <img src={sibuLogo} alt="Logo de Sibu" style={{ width: '150px', borderRadius: '250px' }} />
-                    </div>
-
-                    
-
-
-
-                    
-
-                
-
-               
-               
-
 
             </div>
-    
+            <div className="but">
+            <Button >
+                <label htmlFor="Continuar">Continuar</label>
+
+            </Button>
+            </div>
+            <div className="imagen">
+                <img src={sibuLogo} alt="Logo de Sibu" style={{ width: '200px', borderRadius: '100px', padding: '40px' }} />
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
     )
 }
 
 export default RegistroConductores;
+
+

@@ -25,9 +25,10 @@ export default function Ajustes() {
                     <span className="inline-flex align-items-center gap-1 px-2 py-2">
                         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="">
                         </svg>
-                        <Avatar image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png" className="mr-2" shape="circle"  /> 
+               
                         <div className="flex flex-column align">
-                            <span className="font-bold">Amy Elsner</span>
+                            <span className="font-bold">Amy Elsner</span> 
+                             <Avatar image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png" className="mr-2" shape="circle"  /> 
 
                         </div>
                        

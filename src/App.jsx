@@ -3,7 +3,6 @@ import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
 import { Button } from "primereact/button";
 import Home from "./pages/home";
 import Registropasajeros from "./pages/Registropasajeros";
-import RegistroConductores from "./pages/RegistroConductores";
 
 function App() {
     return (

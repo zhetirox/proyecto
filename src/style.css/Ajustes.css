@@ -6,8 +6,18 @@ body{
   align-items: center;
   background: linear-gradient(to bottom, #000, #063f8f);
 }
-.Ajustes{
-  height: 100%;
-  height: 100%;
+.menu-sibu{
+  width:  300px;
+  height: 600px;
 
 }
+
+.menu-sibu .configuracion{
+  width: auto;
+
+}
+
+
+
+
+

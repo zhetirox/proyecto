@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Menu } from 'primereact/menu';
 import { Badge } from 'primereact/badge';
@@ -24,9 +25,12 @@ export default function Ajustes() {
                     <span className="inline-flex align-items-center gap-1 px-2 py-2">
                         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="">
                         </svg>
-                        <span className="font-medium text-xl font-semibold">
-                            SIBU<span className="text-primary"></span>
-                        </span>
+                        <Avatar image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png" className="mr-2" shape="circle" />
+                        <div className="flex flex-column align">
+                            <span className="font-bold">Amy Elsner</span>
+
+                        </div>
+                       
                     </span>
                 );
             }
@@ -89,11 +93,9 @@ export default function Ajustes() {
             template: (item, options) => {
                 return (
                     <button onClick={(e) => options.onClick(e)} className={classNames(options.className, 'w-full p-link flex align-items-center p-2 pl-4 text-color hover:surface-200 border-noround')}>
-                        <Avatar image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png" className="mr-2" shape="circle" />
-                        <div className="flex flex-column align">
-                            <span className="font-bold">Amy Elsner</span>
-
-                        </div>
+                         <span className="font-medium text-xl font-semibold">
+                            SIBU<span className="text-primary"></span>
+                        </span>
                     </button>
                 );
             }
@@ -101,8 +103,8 @@ export default function Ajustes() {
     ];
 
     return (
-        <div className="card flex justify-content-center">
-            <Menu model={items} className="w-full md:w-15rem" />
+        <div className="card flex justify-content-center menu-sibu">
+            <Menu model={items} className="w-full md:w-15rem configuracion" />
         </div>
     )
 }

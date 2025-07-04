@@ -11,7 +11,6 @@ function App() {
       <Mapa />
       
       <SideMenu />
-      <Home/>
     </PrimeReactProvider>
 
   );

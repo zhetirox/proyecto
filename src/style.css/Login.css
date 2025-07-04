@@ -1,18 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .Login-container {
+    width: 430px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    background: linear-gradient(to bottom, #000000, #063f8f );
+    background: linear-gradient(to bottom, #000000, #063f8f);
 }
 
 .Login-box {
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 400px;
+    width: auto;
 }
 
 .inicio .title {
@@ -21,54 +23,47 @@
     margin-bottom: 2rem;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
 
 .ingresar {
     position: relative;
     margin-bottom: 10rem;
     margin-bottom: 10px;
     text-align: center;
-     margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .p-inputtext {
     width: 100%;
-    margin-bottom: 10px;
+    height: 40px;
+    background-color: #5E5B5B;
+    color: #d3d2d2;
+    border-color: #3a3939;
 }
 
 .registro {
     text-align: center;
-    font-size: 0.9rem;
+    width: auto;
+    height: 50px;
+    padding: 3px;
     margin-bottom: 10px;
-    
 }
 
-.registro input{
-background-color: #5E5B5B;
-border-color: #3a3939;
+.registro input {
+    background-color: #5E5B5B;
+    border-color: #3a3939;
 }
 
 .registro label {
-color: #ffffff;
-
-}
-
-.registro a {
     color: #ffffff;
-    text-decoration: none;
+    margin-top: -10px;
 }
 
 .logo {
     margin-top: 1rem;
     text-align: center;
-    width: auto;   
+    width: auto;
     height: auto;
 }
-
 
 
 .logo img {
@@ -76,15 +71,52 @@ color: #ffffff;
     width: 70px;
 }
 
-.contraseña label {
-
-
+.ingresar{
+    margin-top: 30px;
 }
-
 .ingresar button {
- background-color: #D9D9D9;
- color: black;
- border-color: #D9D9D9;
+    background-color: #D9D9D9;
+    color: black;
+    border-color: #D9D9D9;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.olvcontraseña {
+    justify-content: center;
+
+    text-align: center;
+}
+
+.olvcontraseña a {
+
+    color: white;
+    text-align: center;
+}
+
+.contrasena-container {
+    border: 0;
+    margin-top:25px;
+    color: white;
+}
+
+.contrasena-container input {
+    background-color: #5E5B5B;
+    border-color: #3a3939;
+}
+
+.contrasena-container label {
+    color: #ffffff;
+    margin-top: -10px;
+}
+
+.p-password-panel{
+    margin-top:7px;
+    height: 10px;
+    z-index: 99;
 }
 
 
+.contrasena-container .input-password .p-icon-field {
+    width: 336px;
+}

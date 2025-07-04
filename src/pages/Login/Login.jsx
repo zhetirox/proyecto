@@ -3,8 +3,8 @@ import '../../style.css/Login.css';
 import { InputText } from 'primereact/inputtext';
 import { FloatLabel } from 'primereact/floatlabel';
 import { Button } from 'primereact/button';
-import { Password } from 'primereact/password';
 import LogoSibu from '../../assets/Logo_sibu.png';
+import { Password } from 'primereact/password';
 
 
 
@@ -27,15 +27,24 @@ function Login() {
 
                         <div className='registro'>
                             <FloatLabel>
-                                <InputText id="email" value={value} onChange={(e) => setValue(e.target.value)} />
+                                <InputText className='input-md' id="email" value={value} onChange={(e) => setValue(e.target.value)} />
                                 <label htmlFor="email">Correo electrónico</label>
                             </FloatLabel>
 
                         </div>
                     </form>
-                    <div className='contraseña'>
-                        <Password value={value} onChange={(e) => setValue(e.target.value)} feedback={false} tabIndex={1} />
-                             <label htmlFor="Contraseña"></label>
+
+                    <div className="contrasena-container">
+                        <FloatLabel>
+                            <Password 
+                            id="inputPassword" 
+                            className='input-password' 
+                            value={checked} onChange={(e) => setChecked(e.target.value)}  
+                            promptLabel=" " weakLabel=" " mediumLabel=" " strongLabel=" "
+                               />
+                            <label htmlFor="inputPassword">Contraseña</label>
+                        </FloatLabel>
+                        
                     </div>
                 </div>
 
@@ -44,11 +53,11 @@ function Login() {
                 </div>
 
 
-                <p className="registro">
+                <p className="olvcontraseña">
                     <h3><a href="#">Olvido contraseña</a></h3>
                 </p>
 
-                
+
             </div>
 
         </div >

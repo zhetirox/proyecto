@@ -6,6 +6,7 @@ body{
   align-items: center;
   background: linear-gradient(to bottom, #000, #063f8f);
 }
+<<<<<<< HEAD
 .menu-sibu{
   width:  300px;
   height: 600px;
@@ -21,3 +22,9 @@ body{
 
 
 
+=======
+.p-menuitem-content{
+  width: 200px; 
+  padding: 10;
+}
+>>>>>>> 4065d2579f5466656231c901b3e3bb3a199e8373

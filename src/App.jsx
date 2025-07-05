@@ -1,4 +1,4 @@
-import React from "react";
+import './App.css';
 import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
 import Login from "./pages/Login/Login";
 
@@ -8,7 +8,7 @@ function App() {
             <Login />
         </PrimeReactProvider>
 
-    );
+  );
 }
 
 export default App;

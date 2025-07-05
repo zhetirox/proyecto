@@ -3,12 +3,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f6f8;
+    background-color: #000000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home-box {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -17,7 +17,7 @@
 
 .inicio .title {
     text-align: center;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 2rem;
 }
 
@@ -36,11 +36,7 @@ form {
     width: 100%;
 }
 
-.checkbox {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
+
 
 .registro {
     text-align: center;
@@ -48,7 +44,7 @@ form {
 }
 
 .registro a {
-    color: #007ad9;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -57,6 +53,8 @@ form {
 }
 
 .logo {
+    width: 200px;
     margin-top: 1rem;
     text-align: center;
+    margin: 20px;
 }

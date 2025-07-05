@@ -1,18 +1,12 @@
-import React from 'react';
 import './App.css';
-import Mapa from './pages/Mapa/Mapa';
-import SideMenu from './components/Menu/SideMenu';
 import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
-import Home from "./pages/home";
-import Registropasajeros from "./pages/Registropasajeros";
+import Login from "./pages/Login/Login";
 
 function App() {
-  return (
-    <PrimeReactProvider>
-      <Mapa />
-      
-      <SideMenu />
-    </PrimeReactProvider>
+    return (
+        <PrimeReactProvider>
+            <Login />
+        </PrimeReactProvider>
 
   );
 }

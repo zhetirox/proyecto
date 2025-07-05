@@ -6,6 +6,8 @@ import { Button } from 'primereact/button';
 import { Checkbox } from 'primereact/checkbox';
 import { Password } from 'primereact/password';
 import { Message } from 'primereact/message';
+import Sibu from "./Sibu.png"
+
 
 function Home() {
 
@@ -13,44 +15,46 @@ function Home() {
     const [checked, setChecked] = useState('')
 
     return (
-        <div className='home-container'>
-            <div className='home-box'>
 
-                <div className='inicio'>
-                    <h2 className='title'>INICIAR SESIÓN</h2>
+       
 
-                    <form className='Correo eletronico'>
-                        <div>
-                            <FloatLabel>
-                                <InputText id="email" value={value} onChange={(e) => setValue(e.target.value)} />
-                                <label htmlFor="email">Correo electrónico</label>
-                            </FloatLabel>
+            <div className='home-container'>
+                <div className='home-box'>
 
-                            <Message text="required email" />
-                        </div>
+                    <div className='inicio'>
+                        <h2 className='title'>INICIAR SESIÓN</h2>
 
-                        <div>
-                            <Password />
-                        </div>
-                        <Button label="Sumbit" />
+                        <form className='Correo eletronico'>
 
-                        <div className="checkbox">
-                            <Checkbox onChange={e => setChecked(e.checked)} checked={checked}></Checkbox>
-                        </div>
+                            <div>
+                                <FloatLabel>
+                                    <InputText id="email" value={value} onChange={(e) => setValue(e.target.value)} />
+                                    <label htmlFor="email">Correo electrónico</label>
+                                </FloatLabel>
 
-                        <p className="registro">
-                            Olvido contraseña <a href="#">Olvido contraseña</a>
-                        </p>
-                    </form>
+                                <Message text="required email" />
+                            </div>
+
+                            <div>
+                                <Password />
+                            </div>
+                            <Button label="Ingresar" />
+
+
+                            <p className="registro">
+                                Olvido contraseña <a href="#">Olvido contraseña</a>
+                            </p>
+                        </form>
+                    </div>
+
                 </div>
-
+                <div className="logo">
+                    <img src={Sibu}  />
+                   
+                </div>
             </div>
-            <div className="logo">
-
-
-            </div>
-        </div>
-    )
+           
+            )
 }
 
 

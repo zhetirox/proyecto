@@ -5,7 +5,7 @@ import sibu_redondo from '../Sibu.png';
 
 function Splash() {
     return (
-        <div>
+        <div className="img">
             <img src={sibu_redondo} alt="" />
         </div>
     )

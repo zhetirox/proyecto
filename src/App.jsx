@@ -1,14 +1,10 @@
 import React from "react";
-import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
-import { Button } from "primereact/button";
-import Home from "./pages/home";
-import Registro from "./page/registro/registro";
+import Splash from "./pages/Pagina/splash.jsx";
 
 function App() {
     return (
         <PrimeReactProvider>
-           
-            <Registro/>
+           <Splash/>
         </PrimeReactProvider>
 
     );

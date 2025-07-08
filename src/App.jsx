@@ -1,12 +1,12 @@
 import React from "react";
-import Splash from "./pages/Pagina/splash.jsx";
+import { PrimeReactProvider } from 'primereact/api'; 
+import Splash from "./page/registro/pantalla.jsx";
 
 function App() {
     return (
         <PrimeReactProvider>
-           <Splash/>
+            <Splash />
         </PrimeReactProvider>
-
     );
 }
 

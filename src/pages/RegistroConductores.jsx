@@ -66,6 +66,14 @@ function RegistroConductores() {
 
                 </form>
 
+                 <form className="form">
+                    <FloatLabel>
+                        <InputText id="nombres" value={nombres} onChange={(e) => setValue(e.target.value)} />
+                        <label htmlFor="nombres">Codigo empresa</label>
+                    </FloatLabel>
+
+                </form>
+
 
             </div>
             <div className="but">

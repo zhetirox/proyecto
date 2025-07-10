@@ -4,9 +4,12 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #000, #063f8f);
+  background: linear-gradient(to bottom, #000,rgb(255, 255, 255));
 }
 .p-menuitem-content{
-  width: 200px; 
-  padding: 10;
+  
+
+  width: 320px; /* Ajusta el valor como prefieras */
+  margin: 0 auto; /* Centrar horizontalmente */
 }
+

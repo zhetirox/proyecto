@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Login-container {
+    width: 430px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #000000, #063f8f);
+}
+
+.Login-box {
+    width: auto;
+}
+
+.inicio .title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+
+.ingresar {
+    position: relative;
+    margin-bottom: 10rem;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.p-inputtext {
+    width: 100%;
+    height: 40px;
+    background-color: #5E5B5B;
+    color: #d3d2d2;
+    border-color: #3a3939;
+}
+
+.registro {
+    text-align: center;
+    width: auto;
+    height: 50px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.registro input {
+    background-color: #5E5B5B;
+    border-color: #3a3939;
+}
+
+.registro label {
+    color: #ffffff;
+    margin-top: -10px;
+}
+
+.logo {
+    margin-top: 1rem;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+
+.logo img {
+    margin-top: 1rem;
+    width: 70px;
+}
+
+.ingresar{
+    margin-top: 30px;
+}
+.ingresar button {
+    background-color: #D9D9D9;
+    color: black;
+    border-color: #D9D9D9;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.olvcontraseña {
+    justify-content: center;
+
+    text-align: center;
+}
+
+.olvcontraseña a {
+
+    color: white;
+    text-align: center;
+}
+
+.contrasena-container {
+    border: 0;
+    margin-top:25px;
+    color: white;
+}
+
+.contrasena-container input {
+    background-color: #5E5B5B;
+    border-color: #3a3939;
+}
+
+.contrasena-container label {
+    color: #ffffff;
+    margin-top: -10px;
+}
+
+.p-password-panel{
+    margin-top:7px;
+    height: 10px;
+    z-index: 99;
+}
+
+
+.contrasena-container .input-password .p-icon-field {
+    width: 336px;
+}

@@ -9,7 +9,6 @@ function App() {
         <PrimeReactProvider>
           <Mapa/>
           <SideMenu/>
-            <Login />
         </PrimeReactProvider>
 
   );

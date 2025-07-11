@@ -9,9 +9,8 @@ import Registropasajeros from "./pages/Registropasajeros";
 function App() {
   return (
     <PrimeReactProvider>
-      <Mapa />
-      
-      <SideMenu />
+      <Registropasajeros />
+
     </PrimeReactProvider>
 
   );
